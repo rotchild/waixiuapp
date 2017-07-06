@@ -1,0 +1,653 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+ <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/titleDivHeight"
+    android:background="@color/barbackorange"
+    android:id="@+id/title_relative"
+    >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="完成详情"
+        android:textColor="@color/white"
+        android:textSize="@dimen/titleFontSize"
+        android:layout_centerInParent="true"
+        />
+    <!-- 
+        <ImageView
+        android:id="@+id/currentTask_menuId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/menu"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="5dp"
+        />
+     -->
+<ImageView
+    android:id="@+id/finish_back_iv"
+    android:layout_width="18dp"
+    android:layout_height="18dp"
+    android:src="@drawable/backico"
+    android:layout_centerVertical="true"
+    android:layout_marginLeft="5dp"
+    />
+<TextView
+    android:id="@+id/finishback_tv"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="返回"
+    android:textSize="@dimen/backFontSize"
+    android:textColor="@color/white"
+    android:layout_centerVertical="true"
+    android:layout_toRightOf="@id/finish_back_iv"
+    />
+
+</RelativeLayout>
+<ScrollView
+    android:id="@+id/scoll_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@id/title_relative"
+   
+    android:scrollbars="none"
+    >
+ <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+        <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/detail_padding"
+        >
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="报案号："
+          android:textSize="@dimen/detailL_font_size"
+          android:textColor="@color/detailFC"
+          android:layout_alignParentLeft="true"
+          />  
+       <TextView
+          android:id="@+id/waixiufinish_reportNo_tv"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text=""
+          android:textSize="@dimen/detail_font_size"
+          android:textColor="@color/textgray2"
+          android:layout_alignParentRight="true"
+          />  
+    </RelativeLayout>
+    
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/backgray"
+            >
+            
+        </LinearLayout>
+        
+            <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/detail_padding"
+        >
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="定损车牌号："
+          android:textSize="@dimen/detailL_font_size"
+          android:textColor="@color/detailFC"
+          android:layout_alignParentLeft="true"
+          />  
+       <TextView
+          android:id="@+id/waixiufinish_carNo_tv"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text=""
+          android:textSize="@dimen/detail_font_size"
+          android:textColor="@color/textgray2"
+          android:layout_alignParentRight="true"
+          />  
+    </RelativeLayout>
+    
+                  <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/backgray"
+            >
+            
+        </LinearLayout>  
+            
+            <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/detail_padding"
+        >
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="定损车品牌型号："
+          android:textSize="@dimen/detailL_font_size"
+          android:textColor="@color/detailFC"
+          android:layout_alignParentLeft="true"
+          />  
+       <TextView
+          android:id="@+id/waixiufinish_cartypeNo_tv"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text=""
+          android:textSize="@dimen/detail_font_size"
+          android:textColor="@color/textgray2"
+          android:layout_alignParentRight="true"
+          />  
+    </RelativeLayout> 
+    
+                    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/backgray"
+            >
+            
+        </LinearLayout>
+            
+            <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/detail_padding"
+        >
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="是否为标的车："
+          android:textSize="@dimen/detailL_font_size"
+          android:textColor="@color/detailFC"
+          android:layout_alignParentLeft="true"
+          />  
+       <TextView
+          android:id="@+id/waixiufinish_isTheCar_tv"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text=""
+          android:textSize="@dimen/detail_font_size"
+          android:textColor="@color/textgray2"
+          android:layout_alignParentRight="true"
+          />  
+    </RelativeLayout>
+    
+            <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/backgray"
+            >
+            
+        </LinearLayout>
+            
+             <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/detail_padding"
+        >
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="标的车牌号："
+          android:textSize="@dimen/detailL_font_size"
+          android:textColor="@color/detailFC"
+          android:layout_alignParentLeft="true"
+          />  
+       <TextView
+          android:id="@+id/waixiufinish_theCarNo_tv"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text=""
+          android:textSize="@dimen/detail_font_size"
+          android:textColor="@color/textgray2"
+          android:layout_alignParentRight="true"
+          />  
+    </RelativeLayout> 
+    
+            <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/backgray"
+            >
+            
+        </LinearLayout>   
+             
+              <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/detail_padding"
+        >
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="拆检点："
+          android:textSize="@dimen/detailL_font_size"
+          android:textColor="@color/detailFC"
+          android:layout_alignParentLeft="true"
+          />  
+       <TextView
+          android:id="@+id/waixiufinish_reportDeport_tv"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text=""
+          android:textSize="@dimen/detail_font_size"
+          android:textColor="@color/textgray2"
+          android:layout_alignParentRight="true"
+          />  
+    </RelativeLayout>
+    
+            <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/backgray"
+            >
+            
+        </LinearLayout>
+              
+           <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/detail_padding"
+        >
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="拆检点联系人："
+          android:textSize="@dimen/detailL_font_size"
+          android:textColor="@color/detailFC"
+          android:layout_alignParentLeft="true"
+          />  
+       <TextView
+          android:id="@+id/waixiufinish_deportConnector_tv"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text=""
+          android:textSize="@dimen/detail_font_size"
+          android:textColor="@color/textgray2"
+          android:layout_alignParentRight="true"
+          />  
+    </RelativeLayout>
+    
+          <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/backgray"
+            >
+            
+        </LinearLayout>  
+           
+           <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/detail_padding"
+        >
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="拆检点联系电话："
+          android:textSize="@dimen/detailL_font_size"
+          android:textColor="@color/detailFC"
+          android:layout_alignParentLeft="true"
+          />  
+       <TextView
+          android:id="@+id/waixiufinish_deportConnectorphone_tv"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text=""
+          android:textSize="@dimen/detail_font_size"
+          android:textColor="@color/textgray2"
+          android:layout_alignParentRight="true"
+          />  
+    </RelativeLayout>
+    
+           <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/backgray"
+            >
+            
+        </LinearLayout>
+           
+          <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/detail_padding"
+        >
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="定损员："
+          android:textSize="@dimen/detailL_font_size"
+          android:textColor="@color/detailFC"
+          android:layout_alignParentLeft="true"
+          />  
+       <TextView
+          android:id="@+id/waixiufinish_dingsuner_tv"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text=""
+          android:textSize="@dimen/detail_font_size"
+          android:textColor="@color/textgray2"
+          android:layout_alignParentRight="true"
+          />  
+    </RelativeLayout>
+    
+                  <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/backgray"
+            >
+            
+        </LinearLayout>
+          
+              <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/detail_padding"
+        >
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="定损员电话："
+          android:textSize="@dimen/detailL_font_size"
+          android:textColor="@color/detailFC"
+          android:layout_alignParentLeft="true"
+          />  
+       <TextView
+          android:id="@+id/waixiufinish_dingsunerphone_tv"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text=""
+          android:textSize="@dimen/detail_font_size"
+          android:textColor="@color/textgray2"
+          android:layout_alignParentRight="true"
+          />  
+    </RelativeLayout>
+    
+            <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/backgray"
+            >
+            
+        </LinearLayout>
+              
+        <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/detail_padding"
+        >
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="任务分配时间："
+          android:textSize="@dimen/detailL_font_size"
+          android:textColor="@color/detailFC"
+          android:layout_alignParentLeft="true"
+          />  
+       <TextView
+          android:id="@+id/waixiufinish_fenpeitime_tv"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text=""
+          android:textSize="@dimen/detail_font_size"
+          android:textColor="@color/textgray2"
+          android:layout_alignParentRight="true"
+          />  
+    </RelativeLayout>
+    
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/backgray"
+            >
+            
+        </LinearLayout>
+        
+              <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/detail_padding"
+        >
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="是否可修"
+          android:textSize="@dimen/detailL_font_size"
+          android:textColor="@color/detailFC"
+          android:layout_alignParentLeft="true"
+          />  
+       <TextView
+          android:id="@+id/waixiufinish_isCanRepair_tv"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text=""
+          android:textSize="@dimen/detail_font_size"
+          android:textColor="@color/textgray2"
+          android:layout_alignParentRight="true"
+          />  
+    </RelativeLayout>
+    
+          <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/backgray"
+            >
+            
+        </LinearLayout>
+              
+      <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/detail_padding"
+        >
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="外修日期"
+          android:textSize="@dimen/detailL_font_size"
+          android:textColor="@color/detailFC"
+          android:layout_alignParentLeft="true"
+          />  
+       <TextView
+          android:id="@+id/waixiufinish_waixiuDate_tv"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text=""
+          android:textSize="@dimen/detail_font_size"
+          android:textColor="@color/textgray2"
+          android:layout_alignParentRight="true"
+          />  
+    </RelativeLayout>
+    
+              <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/backgray"
+            >
+            
+        </LinearLayout>
+      
+          <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/detail_padding"
+        >
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="外修单位："
+          android:textSize="@dimen/detailL_font_size"
+          android:textColor="@color/detailFC"
+          android:layout_alignParentLeft="true"
+          />  
+       <TextView
+          android:id="@+id/waixiufinish_waixiudepart_tv"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text=""
+          android:textSize="@dimen/detail_font_size"
+          android:textColor="@color/textgray2"
+          android:layout_alignParentRight="true"
+          />  
+    </RelativeLayout>
+    
+       <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/backgray"
+            >
+            
+        </LinearLayout>
+          
+          
+              <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/detail_padding"
+        >
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="外修配件名称："
+          android:textSize="@dimen/detailL_font_size"
+          android:textColor="@color/detailFC"
+          android:layout_alignParentLeft="true"
+          />  
+       <TextView
+          android:id="@+id/waixiufinish_peijianname_tv"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text=""
+          android:textSize="@dimen/detail_font_size"
+          android:textColor="@color/textgray2"
+          android:layout_alignParentRight="true"
+          />  
+    </RelativeLayout>
+    
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/backgray"
+            >
+            
+        </LinearLayout>
+              
+               <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/detail_padding"
+        >
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="外修配件价格"
+          android:textSize="@dimen/detailL_font_size"
+          android:textColor="@color/detailFC"
+          android:layout_alignParentLeft="true"
+          />  
+       <TextView
+          android:id="@+id/waixiufinish_peijianprice_tv"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text=""
+          android:textSize="@dimen/detail_font_size"
+          android:textColor="@color/textgray2"
+          android:layout_alignParentRight="true"
+          />  
+    </RelativeLayout>
+    
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/backgray"
+            >
+            
+        </LinearLayout>
+               
+               
+                   <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/detail_padding"
+        >
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="外修修复金额"
+          android:textSize="@dimen/detailL_font_size"
+          android:textColor="@color/detailFC"
+          android:layout_alignParentLeft="true"
+          />  
+       <TextView
+          android:id="@+id/waixiufinish_xiufuprice_tv"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text=""
+          android:textSize="@dimen/detail_font_size"
+          android:textColor="@color/textgray2"
+          android:layout_alignParentRight="true"
+          />  
+    </RelativeLayout>
+               
+          
+      <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/backgray"
+            >
+            
+        </LinearLayout>        
+
+
+          <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/detail_padding"
+        >
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="备注："
+          android:textSize="@dimen/detailL_font_size"
+          android:textColor="@color/detailFC"
+          android:layout_alignParentLeft="true"
+          />
+          <Button
+           android:id="@+id/waixiuw_look_btn"
+           android:layout_width="50dp"
+           android:layout_height="25dp"
+           android:padding="1dp"
+           android:text="查看"
+           android:textSize="@dimen/detail_font_size"
+           android:textColor="@color/white"
+           android:background="@drawable/orange_btn_shape"
+           android:layout_alignParentRight="true"
+           android:layout_centerVertical="true"
+           />
+          <!-- 
+                 <TextView
+          android:id="@+id/waixiufinish_note_tv"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text=""
+          android:textSize="@dimen/detail_font_size"
+          android:textColor="@color/textgray2"
+          android:layout_alignParentRight="true"
+          /> 
+           -->  
+ 
+    </RelativeLayout>    
+</LinearLayout>   
+</ScrollView>    
+
+</RelativeLayout>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/titleDivHeight"
+    android:background="@color/barbackorange"
+    android:id="@+id/title_relative"
+    >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="版本更新"
+        android:textColor="@color/white"
+        android:textSize="@dimen/titleFontSize"
+        android:layout_centerInParent="true"
+        />
+<!-- 
+    <ImageView
+        android:id="@+id/set_menuId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/menu"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="5dp"
+        />
+ -->
+<ImageView
+    android:id="@+id/setback_iv"
+    android:layout_width="18dp"
+    android:layout_height="18dp"
+    android:src="@drawable/backico"
+    android:layout_centerVertical="true"
+    android:layout_marginLeft="5dp"
+    />
+<TextView
+    android:id="@+id/setback_tv"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="返回"
+    android:textSize="@dimen/backFontSize"
+    android:textColor="@color/white"
+    android:layout_toRightOf="@id/setback_iv"
+    android:layout_centerVertical="true"
+    />
+</RelativeLayout>    
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20dp"
+    android:orientation="vertical"
+    >
+  <ImageView
+      android:layout_width="70dp"
+      android:layout_height="70dp"
+      android:src="@drawable/wailogo"
+      android:scaleType="centerInside"
+      android:layout_gravity="center"
+      />
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="5dp"
+      android:text="外修任务"
+      android:textColor="@color/barbackorange"
+      android:textSize="16dp"
+      android:layout_gravity="center"
+      />
+  <TextView
+      android:id="@+id/version_id"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="1.0版"
+      android:textColor="@color/textgray"
+      android:textSize="14dp"
+      android:layout_gravity="center"
+       
+      />  
+</LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginTop="20dp"
+    >
+    <Button
+        android:id="@+id/checkupdate_btn"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:background="@drawable/check_update_selector"
+        android:text="立即更新"
+        android:padding="5dp"
+        android:textSize="16dp"
+        android:textColor="@color/white"
+        android:layout_gravity="center"
+        />
+</LinearLayout>    
+
+</LinearLayout>

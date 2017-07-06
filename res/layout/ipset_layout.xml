@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+ <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/titleDivHeight"
+    android:background="@color/barbackorange"
+    android:id="@+id/ipset_title_relative"
+   
+    >
+    <ImageView
+        android:id="@+id/ipset_back"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:src="@drawable/mback"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="IP设置"
+        android:textColor="@color/white"
+        android:textSize="@dimen/titleFontSize"
+        android:layout_centerInParent="true"
+        />
+
+</RelativeLayout>    
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    >
+ <EditText
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:id="@+id/ipset_et"
+     android:paddingLeft="70dp"
+     android:singleLine="true"
+     android:textSize="16sp"
+     android:textColor="@color/black"
+     android:background="@null"
+     />
+ <TextView
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:text="服务器IP："
+     android:textSize="16sp"
+     android:layout_centerVertical="true"
+    
+     /> 
+</RelativeLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:background="@color/buttoncolorgray"
+    android:orientation="vertical"
+    >
+</LinearLayout>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    >
+ <EditText
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:id="@+id/portset_et"
+     android:paddingLeft="90dp"
+     android:singleLine="true"
+     android:textSize="16sp"
+     android:textColor="@color/black"
+     android:background="@null"
+     />
+ <TextView
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:text="服务器端口："
+     android:textSize="16sp"
+     android:layout_centerVertical="true"
+    
+     /> 
+</RelativeLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:background="@color/buttoncolorgray"
+    android:orientation="vertical"
+    >
+</LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="5dp"
+    >
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="IP格式如192.168.1.1"
+    android:textColor="@color/buttoncolorred"
+    />    
+</LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="5dp"
+    >
+<Button
+    android:id="@+id/ipsetOk_btn"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="确定"
+    android:textColor="@color/white"
+    android:textSize="16sp"
+    android:background="@drawable/login_background"
+    />
+</LinearLayout>
+
+
+<!-- 
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="5dp"
+    >
+<Button
+    android:id="@+id/setexit_btn"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="退出"
+    android:textColor="@color/white"
+    android:textSize="16sp"
+    android:background="@drawable/login_background"
+    />
+</LinearLayout>
+
+ -->
+
+
+
+</LinearLayout>
